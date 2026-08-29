@@ -14,3 +14,8 @@ scoreboard objectives add spawn dummy
 scoreboard objectives add X dummy
 scoreboard objectives add Y dummy
 scoreboard objectives add Z dummy
+
+#creates scoreboards for the xyz coords of spawn
+scoreboard objectives add spawnx dummy
+scoreboard objectives add spawny dummy
+scoreboard objectives add spawnz dummy
