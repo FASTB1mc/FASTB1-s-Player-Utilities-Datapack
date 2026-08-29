@@ -1,10 +1,17 @@
-#sets up the scoreboard for each individual player's homes
+#sets up the scoreboard for each individual player's homes tps
 execute at $@s run scoreboard objectives add %player% dummy
 
-#adds a point to the scoreboard for setup process
-execute at $@s run scoreboard players set @p %player% 1
+#sets scoreboard to 0 for starting point
+execute at $@s run scoreboard players set @p %player% 0
 
 #Gets player's position
 execute at $@s run function position
 
-#saves coords of player
+#spawns armor stand to act as tp anchor at the home
+summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,NoGravity:1b,Tags:["homeMarker"]}
+
+#stores coords of the home in scoreboards
+execute store result score $@s %player%_x run scoreboard players get @s X
+execute store result score $@s %player%_y run scoreboard players get @s Y
+execute store result score $@s %player%_z run scoreboard players get @s Z
+
