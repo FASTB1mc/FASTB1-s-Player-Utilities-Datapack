@@ -8,7 +8,7 @@ execute at $@s run scoreboard players set @p %player% 0
 execute at $@s run function position
 
 #spawns armor stand to act as tp anchor at the home
-summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,NoGravity:1b,Tags:["homeMarker"]}
+summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,NoGravity:1b,Team:["%player%"]}
 
 #stores coords of the home in scoreboards
 execute store result score $@s %player%_x run scoreboard players get @s X
