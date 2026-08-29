@@ -1,0 +1,10 @@
+#sets up the scoreboard for each individual player's homes
+execute at $@s run scoreboard objectives add %player% dummy
+
+#adds a point to the scoreboard for setup process
+execute at $@s run scoreboard players set @p %player% 1
+
+#Gets player's position
+execute at $@s run function position
+
+#saves coords of player
