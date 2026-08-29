@@ -1,3 +1,6 @@
+#Message that appears when datapack loads
+tellraw @a {"text":"Player Utilities Datapack by FASTB1-loaded.","color":"aqua"}
+
 #creates scoreboard for homes
 scoreboard objectives add homes trigger
 
