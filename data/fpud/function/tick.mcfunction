@@ -6,6 +6,7 @@ scoreboard players enable @a homes
 #Allows the player to use /trigger spawn
 scoreboard players enable @a spawn
 
+
 #Allows the player to use /trigger tpa
 scoreboard players enable @a tpa
 
