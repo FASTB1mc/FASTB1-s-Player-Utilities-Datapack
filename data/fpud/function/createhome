@@ -15,3 +15,7 @@ execute store result score $@s %player%_x run scoreboard players get @s X
 execute store result score $@s %player%_y run scoreboard players get @s Y
 execute store result score $@s %player%_z run scoreboard players get @s Z
 
+#moves armor stand to correct position for tp
+execute store result entity @e[team=%player%,limit=1] Pos[0] double 1 run scoreboard players get @p %player%_x
+execute store result entity @e[team=%player%,limit=1] Pos[1] double 1 run scoreboard players get @p %player%_y
+execute store result entity @e[team=%player%,limit=1] Pos[2] double 1 run scoreboard players get @p %player%_z
