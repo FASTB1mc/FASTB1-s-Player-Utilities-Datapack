@@ -10,3 +10,7 @@ scoreboard objectives add rtp dummy
 #creates scoreboard for spawn
 scoreboard objectives add spawn dummy
 
+#creates scoreboards for tracking and storing XYZ coords
+scoreboard objectives add X dummy
+scoreboard objectives add Y dummy
+scoreboard objectives add Z dummy
