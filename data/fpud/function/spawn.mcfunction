@@ -5,3 +5,6 @@ execute store result entity @e[tag=spawnMarker,limit=1] Pos[2] double 1 run scor
 
 #teleports player to coordinates listed in the spawnzyx scoreboards
 tp $@p @e[tag=spawnMarker,limit=1]
+
+#sets spawn scoreboard back to 0
+trigger spawn set 1
