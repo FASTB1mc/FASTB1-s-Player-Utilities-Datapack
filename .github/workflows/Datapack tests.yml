@@ -1,0 +1,33 @@
+name: Test Minecraft Datapacks
+
+on:
+  push:
+    branches: [ main ]  # or your testing branch
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-datapacks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Setup Minecraft
+        run: |
+          wget https://launcher.mojang.com/mc/game/1.20.1/minecraft_server.1.20.1.jar -O server.jar
+          mkdir -p datapacks
+          cp -r datapacks/* datapacks/
+
+      - name: Run datapack tests
+        run: |
+          java -jar server.jar nogui
+          # Example: run a simple datapack test script
+          # Replace with your actual datapack validation logic
+          echo "Datapack test completed"
