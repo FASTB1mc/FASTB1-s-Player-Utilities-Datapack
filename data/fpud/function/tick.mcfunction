@@ -14,7 +14,7 @@ execute as @a if score rtptimer matches 100 run scoreboard objectives rtp set 0
 execute as @a if score rtptimer matches 100 run scoreboard objectives rtptimer set 0
 
 #detects tpa scoreboard
-execute as @a if score @s tpa matches 1 run function fpud:tpasetup
+
 
 #detects tpaaccept scoreboard
 execute as @a if score tpaaccept matches 1 run function fpud:tpaaccept
