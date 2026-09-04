@@ -14,3 +14,6 @@ scoreboard players enable @a rtp
 
 #Creates armor stand for rtp
 execute unless entity @e[tag=rtpspot] run summon minecraft:armor_stand ~ 319 ~ {tags:["rtpspot"],nogravity:1b,effect:{id:"minecraft:invisibility",amplifier:1b,duration:infinite},effect:{id:"minecraft:regeneration",amplifier:255b,duration:infinite}}
+
+#Creates scoreboard for rtpinuse
+scoreboard objectives add rtpinuse dummy
