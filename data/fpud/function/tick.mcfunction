@@ -21,3 +21,5 @@ execute as @a if score tpaaccept matches 1 run function fpud:tpaaccept
 
 #detects tpadeny scoreboard
 execute as @a if score tpaaccept matches 1 run function fpud:tpadeny
+
+
