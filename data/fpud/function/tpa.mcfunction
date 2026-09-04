@@ -6,4 +6,4 @@
 #
 scoreboard players #this set 
 #
-execute as @e[predicate=fpud:match_id] run 
+execute store result score #this tpasetup run as @e[predicate=fpud:match_id]
