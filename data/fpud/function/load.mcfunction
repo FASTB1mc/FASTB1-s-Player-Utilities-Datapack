@@ -32,4 +32,4 @@ scoreboard players enable @a tpadeny
 
 #Creates a scoreboard for the tpaselect
 scoreboard objectives add tpaselect trigger {"text":"tpaselect"}
-
+scoreboard players enable @a tpaselect
