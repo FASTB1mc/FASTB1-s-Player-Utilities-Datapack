@@ -29,3 +29,7 @@ scoreboard players enable @a tpaaccept
 #creates a scoreboard for tpadeny
 scoreboard objectives add tpadeny trigger {"text":"tpadeny"}
 scoreboard players enable @a tpadeny
+
+#Creates a scoreboard for the tpaselect
+scoreboard objectives add tpaselect trigger {"text":"tpaselect"}
+
