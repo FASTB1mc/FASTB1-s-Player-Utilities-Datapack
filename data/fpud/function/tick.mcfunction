@@ -13,8 +13,9 @@ execute as @a if score rtptimer matches 100 run scoreboard objectives rtp set 0
 #resets timer scoreboard
 execute as @a if score rtptimer matches 100 run scoreboard objectives rtptimer set 0
 
-#detects tpa scoreboard
-
+#detects tpa scoreboard changes
+execute as @a unless score @s tpa = @s tpa.prev run function fpud:tpa
+execute as @a run scoreboard players operation @s tpa.prev = @s tpa
 
 #detects tpaaccept scoreboard
 execute as @a if score tpaaccept matches 1 run function fpud:tpaaccept
