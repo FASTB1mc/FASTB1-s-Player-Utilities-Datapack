@@ -7,3 +7,7 @@ scoreboard objectives add playerid dummy
 #Creates spawn scoreboard
 scoreboard objectives add spawn trigger {"text":"spawn"}
 scoreboard players enable @a spawn
+
+#Creates rtp scoreboard 
+scoreboard objectives add rtp trigger {"text":"spawn"}
+scoreboard players enable @a rtp
