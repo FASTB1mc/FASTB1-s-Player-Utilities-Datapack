@@ -21,7 +21,6 @@ scoreboard objectives add rtptimer dummy
 #creates a scoreboard for tpa
 scoreboard objectives add tpa trigger {"text":"tpa"}
 scoreboard players enable @a tpa
-scoreboard objectives add tpa.prev dummy
 
 #creates a scoreboard for tpaaccept
 scoreboard objectives add tpaaccept trigger {"text":"tpaaccept"}
