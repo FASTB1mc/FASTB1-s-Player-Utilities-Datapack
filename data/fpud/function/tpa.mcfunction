@@ -1,6 +1,7 @@
-#
-execute on attacker run execute as @s run function fpud:find_id
+#takes the player id and stores in in the tpaid1 for usage
+execute as @s run scoreboard players operation @s tpaid1 = @s tpa
 
+#finds the player id of the player who ran the command and stores it in tpaid2 for usage
+execute as @s store result score #this tpaid2 run function fpud:find_id
 
-#
-damage @s 0.0001 [fall] [by #this]
+#use id to find coords of tpaid1 player then tp tpaid2 player to those coords
