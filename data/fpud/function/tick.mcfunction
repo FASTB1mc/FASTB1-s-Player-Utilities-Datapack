@@ -22,4 +22,5 @@ execute as @a if score tpaaccept matches 1 run function fpud:tpaaccept
 #detects tpadeny scoreboard
 execute as @a if score tpaaccept matches 1 run function fpud:tpadeny
 
-
+#Tells a player that Tpa is in use by another player.
+execute as @a if score tpa operator <1 run tellraw @s Tpa is currently in use, please wait.
