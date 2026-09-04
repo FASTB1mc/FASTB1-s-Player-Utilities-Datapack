@@ -6,3 +6,6 @@ execute store result entity @e[tag="rtpspot"] Pos[3] run random 100..10000
 
 #Teleports the player to rtpspot
 execute as @s tp @s @e[tag="rtpspot"] 
+
+#Resets scoreboard of rtp
+scoreboard objectives rtp set 0
