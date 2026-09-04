@@ -5,3 +5,4 @@ execute as @s run scoreboard players operation @s tpaid1 = @s tpa
 execute as @s store result score #this tpaid2 run function fpud:find_id
 
 #use id to find coords of tpaid1 player then tp tpaid2 player to those coords
+execute as @e[predicate=fpud:match_id] store result score tpaid2 run
