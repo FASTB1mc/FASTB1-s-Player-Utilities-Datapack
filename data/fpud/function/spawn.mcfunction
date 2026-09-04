@@ -5,4 +5,4 @@ execute unless entity @e[tag="spawnmarker"] run tellraw @a Spawn is not set so t
 execute as @s run tp @s @e[tag="spawnmarker"]
 
 #Resets spawn scoreboard so command can be used again
-scoreboard objectives spawn set 0
+scoreboard players set @a spawn 0
