@@ -17,3 +17,12 @@ execute unless entity @e[tag=rtpspot] run summon minecraft:armor_stand ~ 319 ~ {
 
 #creates scoreboard for rtptimer
 scoreboard objectives add rtptimer dummy
+
+#creates a scoreboard for tpa
+scoreboard objectives add tpa trigger {"text":"spawn"}
+
+#creates a scoreboard for tpaaccept
+scoreboard objectives add tpaaccept trigger {"text":"spawn"}
+
+#creates a scoreboard for tpadeny
+scoreboard objectives add tpadeny trigger {"text":"spawn"}
