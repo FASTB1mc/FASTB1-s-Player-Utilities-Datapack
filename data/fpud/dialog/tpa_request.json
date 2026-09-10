@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Tpa",
+    "color": "#0114a7",
+    "hover_event": {
+      "action": "show_text",
+      "value": {
+        "text": "Press ESC to close dialog and end request"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "name",
+      "label": {
+        "text": "Tpa target",
+        "hover_event": {
+          "action": "show_text",
+          "value": {
+            "text": "Type the username of the player you wish to tpa to."
+          }
+        }
+      }
+    }
+  ],
+  "can_close_with_escape": true,
+  "after_action": "close",
+  "actions": [
+    {
+      "label": "Request Tpa",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "dialog show @a[name=$(name)] fpud:tpa_yes_no"
+      }
+    }
+  ]
+}
