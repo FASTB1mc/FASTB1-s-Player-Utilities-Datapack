@@ -35,5 +35,12 @@
         "template": "execute as @s run dialog show @a[name=$(name)] fpud:tpa_yes_no"
       }
     }
+    {
+      "label": "Tpa setup",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "execute as @s run function fpud:tpa"
+      }
+    }
   ]
 }
