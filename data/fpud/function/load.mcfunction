@@ -18,3 +18,6 @@ execute unless entity @e[tag=rtpspot] run summon minecraft:armor_stand ~ 319 ~ {
 #creates a scoreboard for tpa
 scoreboard objectives add tpa trigger {"text":"tpa"}
 scoreboard players enable @a tpa
+
+#Makes an rtp cooldown scoreboard
+scoreboard objectives add rtpcd dummy
