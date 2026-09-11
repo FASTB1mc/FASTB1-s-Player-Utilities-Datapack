@@ -15,9 +15,6 @@ scoreboard players enable @a rtp
 #Creates armor stand for rtp
 execute unless entity @e[tag=rtpspot] run summon minecraft:armor_stand ~ 319 ~ {Tags:["rtpspot"], NoGravity:1b, Invisible:1b, Invulnerable:1b}
 
-#creates scoreboard for rtptimer
-scoreboard objectives add rtptimer dummy
-
 #creates a scoreboard for tpa
 scoreboard objectives add tpa trigger {"text":"tpa"}
 scoreboard players enable @a tpa
