@@ -1,26 +1,8 @@
 #detects if score of spawn scoreboard is 1 and runs a function accordingly
-execute as @a if score @a spawn matches 1 run function fpud:spawn
+execute as @s if score @a spawn matches 1 run dialog show @s fpud:spawn
 
 #detects if score of rtp matches 1 and runs a function accordingly
-execute as @a if score @a rtp matches 1 run function fpud:rtp
-
-#Incriments a scoreboard called rtptimer
-scoreboard players add @a rtptimer 1
-
-#resets rtp scoreboard after 5 seconds
-execute as @a if score @a rtptimer matches 100 run scoreboard players set @a rtp 0
-
-#resets timer scoreboard
-execute as @a if score @a rtptimer matches 100 run scoreboard players set @a rtptimer 0
+execute as @s if score @a rtp matches 1 run dialog show @s fpud:rtp
 
 #detects tpa scoreboard
-execute as @a if score @a tpa matches 1 run function fpud:tpa
-
-#detects tpaaccept scoreboard
-execute as @a if score @a tpaaccept matches 1 run function fpud:tpaaccept
-
-#detects tpadeny scoreboard
-execute as @a if score @a tpadeny matches 1 run function fpud:tpadeny
-
-#Tells a player that Tpa is in use by another player.
-execute as @a if score @a tpa matches 1 run tellraw @s {"text":"Tpa is currently in use, please wait.","color":"red"}
+execute as @s if score @a tpa matches 1 run dialog show @s fpud:tpa_request
