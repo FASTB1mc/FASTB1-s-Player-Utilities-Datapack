@@ -21,15 +21,3 @@ scoreboard objectives add rtptimer dummy
 #creates a scoreboard for tpa
 scoreboard objectives add tpa trigger {"text":"tpa"}
 scoreboard players enable @a tpa
-
-#creates a scoreboard for tpaaccept
-scoreboard objectives add tpaaccept trigger {"text":"tpaaccept"}
-scoreboard players enable @a tpaaccept
-
-#creates a scoreboard for tpadeny
-scoreboard objectives add tpadeny trigger {"text":"tpadeny"}
-scoreboard players enable @a tpadeny
-
-#Creates a scoreboard for the tpaselect
-scoreboard objectives add tpaselect trigger {"text":"tpaselect"}
-scoreboard players enable @a tpaselect
