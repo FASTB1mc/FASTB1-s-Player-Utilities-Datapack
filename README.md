@@ -1,7 +1,7 @@
-#**FASTB1-s-Player-Utilities-Datapack**
-#A Datapack adding homes, Tpa, Rtp and other player utilities in a vanilla way.
+**FASTB1-s-Player-Utilities-Datapack**
+A Datapack adding homes, Tpa, Rtp and other player utilities in a vanilla way.
 
-#**Useage**
+**Usage**
 #  Spawn:
     1. Have an admin use /function fpud:set_spawn to set the spawn location to their current location
     2. Using the quick actions keybind, open the main dialog and click on Spawn
@@ -20,5 +20,5 @@
     3. A dialog will be sent to this player and they will be able to accept or deny it. You will receive a message if denied. You will teleport if not.
 
 
-#**Homes are not yet implemented.**
+**Homes are not yet implemented.**
     
