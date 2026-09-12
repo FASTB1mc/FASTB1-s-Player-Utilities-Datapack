@@ -1,7 +1,7 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "Rtp",
+    "text": "Rtp(Exit the dialog and you will teleport)",
     "color": "#35e704"
   },
   "inputs": [],
