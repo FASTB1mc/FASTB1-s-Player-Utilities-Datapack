@@ -1,4 +1,4 @@
-#Checks if the player has a cooldown and then runs a return fail
+#Checks if the player has a cooldown and then runs a return command
 execute as @s if function fpud:check_cooldown run return 1
 
 #Gets and stores random values for x coords in an armor stand
