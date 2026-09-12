@@ -1,7 +1,7 @@
-**FASTB1-s-Player-Utilities-Datapack**
+##FASTB1-s-Player-Utilities-Datapack
 A Datapack adding homes, Tpa, Rtp and other player utilities in a vanilla way.
 
-**Usage**
+##Usage
 #  Spawn:
     1. Have an admin use /function fpud:set_spawn to set the spawn location to their current location
     2. Using the quick actions keybind, open the main dialog and click on Spawn
