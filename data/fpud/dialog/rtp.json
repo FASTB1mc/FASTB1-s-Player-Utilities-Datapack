@@ -1,1 +1,26 @@
-
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Rtp",
+    "color": "#35e704"
+  },
+  "inputs": [],
+  "can_close_with_escape": true,
+  "after_action": "close",
+  "exit_action": {
+    "label": {
+      "text": "Click to start Rtp or press Esc",
+      "hover_event": {
+        "action": "show_text",
+        "value": {
+          "text": "Exiting the dialog will start rtp"
+        }
+      }
+    },
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "execute as @s run function fpud:rtp"
+    }
+  },
+  "actions": []
+}
