@@ -6,6 +6,7 @@ A Datapack adding homes, Tpa, Rtp and other player utilities in a vanilla way.
     1. Have an admin use /function fpud:set_spawn to set the spawn location to their current location
     2. Using the quick actions keybind, open the main dialog and click on Spawn
     3. Another dialog should pop up and once you exit it you will be instantly teleported to spawn
+    4. An admin can use /function fpud:reset_spawn to delete the current spawn location. They will need to run /function fpud:set_spawn to set a new location
   Rtp:
     1. Using the quick actions keybind, open the main dialog and click on Rtp
     2. Another dialog should open and once closed you will teleport to the Rtp location
@@ -17,6 +18,7 @@ A Datapack adding homes, Tpa, Rtp and other player utilities in a vanilla way.
     1. Using the quick actions keybind, open the main dialog and click Tpa Request.
     2. Another dialog will open and you must imput the name of the player to wish to tp to into the box. 
     3. A dialog will be sent to this player and they will be able to accept or deny it. You will receive a message if denied. You will teleport if not.
-**  Homes are not yet implemented.**
 
+
+**Homes are not yet implemented.**
     
