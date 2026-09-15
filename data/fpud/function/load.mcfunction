@@ -15,7 +15,9 @@ scoreboard objectives add spawn trigger
 scoreboard objectives add rtp trigger
 scoreboard objectives add homes trigger
 scoreboard objectives add tparequest trigger
-scoreboard objectives add tpasend trigger
+scoreboard objectives add tpaaccept trigger
+scoreboard objectives add tpadeny trigger
+scoreboard objectives add tpatimer trigger
 scoreboard objectives add tpasetup trigger
 
 #Enables players to trigger the dialog scoreboards
@@ -23,5 +25,7 @@ scoreboard players enable @a spawn
 scoreboard players enable @a rtp
 scoreboard players enable @a homes
 scoreboard players enable @a tparequest
-scoreboard players enable @a tpasend
+scoreboard players enable @a tpaaccept
 scoreboard players enable @a tpasetup
+scoreboard players enable @a tpadeny
+scoreboard players enable @a tpatimer
