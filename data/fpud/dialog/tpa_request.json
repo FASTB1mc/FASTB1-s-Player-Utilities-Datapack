@@ -39,14 +39,7 @@
       "label": "Tpa accept",
       "action": {
         "type": "minecraft:dynamic/run_command",
-        "template": "trigger tpaaccept set 1"
-      }
-    }
-    {
-      "label": "Tpa setup",
-      "action": {
-        "type": "minecraft:dynamic/run_command",
-        "template": "trigger tpatimer set 1"
+        "template": "trigger tpaaccept set 2"
       }
     }
   ]
