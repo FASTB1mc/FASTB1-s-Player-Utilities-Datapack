@@ -2,7 +2,7 @@
 execute as @s if function fpud:check_cooldown run return 1
 
 #Gives player the resistance effect so they don't die of fall damage or other things when they rtp
-execute as @s run effect give @s minecraft:resistance 30 255 true
+effect give @e[predicate=match_id] minecraft:resistance 30 255 true
 
 #Gets and stores random values for x coords in an armor stand
 execute store result entity @e[tag=rtpspot] Pos[1] int 1 run random roll 100..10000
@@ -11,4 +11,4 @@ execute store result entity @e[tag=rtpspot] Pos[1] int 1 run random roll 100..10
 execute store result entity @e[tag=rtpspot] Pos[3] int 1 run random roll 100..10000
 
 #Teleports the player to rtpspot
-execute as @s run tp @s @e[tag=rtpspot]
+tp @e[predicate=match_id] @e[tag=rtpspot]
