@@ -32,14 +32,14 @@
       "label": "Request Tpa",
       "action": {
         "type": "minecraft:dynamic/run_command",
-        "template": "execute as @s run dialog show @a[name=$(name)] fpud:tpa_yes_no"
+        "template": "trigger tpasend set 1"
       }
     }
     {
       "label": "Tpa setup",
       "action": {
         "type": "minecraft:dynamic/run_command",
-        "template": "execute as @s run function fpud:tpa"
+        "template": "trigger tpasetup set 1"
       }
     }
   ]
