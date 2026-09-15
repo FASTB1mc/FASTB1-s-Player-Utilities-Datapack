@@ -8,3 +8,6 @@ execute as @a[score={rtp=1..}] run function fpud:rtp
 #Checks Spawn scoreboard for teleport
 execute as @a[score={spawn=1..}] run scoreboard players operation #this playerid = @s playerid
 execute as @a[score={spawn=1..}] run function fpud:spawn
+
+
+execute if score @a tpatimer matches 1.. run scoreboard players add #tpa 1
