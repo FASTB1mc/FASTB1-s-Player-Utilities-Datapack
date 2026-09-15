@@ -3,3 +3,6 @@ execute unless entity @e[tag=spawnmarker] run tellraw @e[predicate=match_id] {"t
 
 #Teleports player to spawn 
 tp @e[predicate=match_id] @e[tag=spawnmarker]
+
+#resets spawn scoreboard
+scoreboard players set @e[predicate=match_id] spawn 0
