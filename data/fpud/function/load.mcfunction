@@ -10,20 +10,22 @@ execute unless entity @e[tag=rtpspot] run summon minecraft:armor_stand ~ 319 ~ {
 #Makes an rtp cooldown scoreboard
 scoreboard objectives add rtpcd dummy
 
-#Adds scoreboards for triggering dialogs
+#Adds scoreboards for spawn and rtp
 scoreboard objectives add spawn trigger
 scoreboard objectives add rtp trigger
+scoreboard players enable @a spawn
+scoreboard players enable @a rtp
+
+#Adds scoreboards for homes
 scoreboard objectives add homes trigger
+scoreboard players enable @a homes
+
+#Adds scoreboards for tpa
 scoreboard objectives add tparequest trigger
 scoreboard objectives add tpaaccept trigger
 scoreboard objectives add tpadeny trigger
 scoreboard objectives add tpatimer trigger
 scoreboard objectives add tpasetup trigger
-
-#Enables players to trigger the dialog scoreboards
-scoreboard players enable @a spawn
-scoreboard players enable @a rtp
-scoreboard players enable @a homes
 scoreboard players enable @a tparequest
 scoreboard players enable @a tpaaccept
 scoreboard players enable @a tpasetup
