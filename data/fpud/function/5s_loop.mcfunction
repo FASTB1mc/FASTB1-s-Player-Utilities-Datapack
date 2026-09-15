@@ -9,5 +9,8 @@ execute as @a[score={rtp=1..}] run function fpud:rtp
 execute as @a[score={spawn=1..}] run scoreboard players operation #this playerid = @s playerid
 execute as @a[score={spawn=1..}] run function fpud:spawn
 
+#Incriments tpa timer every 5 secs
+execute if score @a tpatimer matches 1.. run scoreboard players add #tpa tpatimer 1
 
-execute if score @a tpatimer matches 1.. run scoreboard players add #tpa 1
+
+execute if score #tpa tpatimer matches 6.. run scoreboard players set #tpa tpatimer 0
