@@ -2,4 +2,4 @@
 execute unless entity @e[tag=spawnmarker] run tellraw @s {"text":"Spawn is not set so tp is not possible","color":"red"}
 
 #Teleports player to spawn 
-execute as @s run tp @s @e[tag=spawnmarker]
+tp @e[predicate=match_id] @e[tag=spawnmarker]
