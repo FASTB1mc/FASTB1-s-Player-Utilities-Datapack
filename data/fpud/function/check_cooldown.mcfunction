@@ -5,5 +5,5 @@ execute if score @s rtpcd matches 1.. run return fail
 # If the function hasn't yet been stopped, then the player is not on a cooldown
 # so we can set the cooldown and then return a success. 
 
-scoreboard players set @s rtpcd 100
+scoreboard players set @s rtpcd 600
 return 1
