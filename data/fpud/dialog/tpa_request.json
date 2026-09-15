@@ -32,14 +32,21 @@
       "label": "Request Tpa",
       "action": {
         "type": "minecraft:dynamic/run_command",
-        "template": "trigger tpasend set 1"
+        "template": "msg $name I wish to tp to you. Run /trigger tpaaccept to accept. To deny run /trigger tpadeny or wait 30 seconds."
+      }
+    }
+    {
+      "label": "Tpa accept",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "trigger tpaaccept set 1"
       }
     }
     {
       "label": "Tpa setup",
       "action": {
         "type": "minecraft:dynamic/run_command",
-        "template": "trigger tpasetup set 1"
+        "template": "trigger tpatimer set 1"
       }
     }
   ]
