@@ -12,3 +12,6 @@ execute store result entity @e[tag=rtpspot] Pos[3] int 1 run random roll 100..10
 
 #Teleports the player to rtpspot
 tp @e[predicate=match_id] @e[tag=rtpspot]
+
+#Resets rtp scoreboard
+scoreboard players set @e[predicate=match_id] rtp 0
