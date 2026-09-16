@@ -25,9 +25,9 @@ scoreboard objectives add tparequest trigger
 scoreboard objectives add tpaaccept trigger
 scoreboard objectives add tpadeny trigger
 scoreboard objectives add tpatimer trigger
-scoreboard objectives add tpasetup trigger
+scoreboard objectives add tpa trigger
 scoreboard players enable @a tparequest
 scoreboard players enable @a tpaaccept
-scoreboard players enable @a tpasetup
+scoreboard players enable @a tpa
 scoreboard players enable @a tpadeny
 scoreboard players enable @a tpatimer
