@@ -1,46 +1,34 @@
 {
-  "type": "minecraft:multi_action",
+  "type": "minecraft:confirmation",
   "title": {
     "text": "Tpa",
-    "color": "#0114a7",
+    "color": "#121111",
     "hover_event": {
       "action": "show_text",
-      "value": {
-        "text": "Press ESC to close dialog and end request"
-      }
+      "value": "Teleport to another player if they allow you to"
     }
   },
   "inputs": [
     {
       "type": "minecraft:text",
       "key": "name",
-      "label": {
-        "text": "Tpa target",
-        "hover_event": {
-          "action": "show_text",
-          "value": {
-            "text": "Type the username of the player you wish to tpa to."
-          }
-        }
-      }
+      "label": "Name of player you wish to Teleport to"
     }
   ],
-  "can_close_with_escape": true,
+  "can_close_with_escape": false,
   "after_action": "close",
-  "actions": [
-    {
-      "label": "Request Tpa",
-      "action": {
-        "type": "minecraft:dynamic/run_command",
-        "template": "msg $name I wish to tp to you. Run /trigger tpaaccept to accept. To deny run /trigger tpadeny or wait 30 seconds."
-      }
+  "yes": {
+    "label": "Send Request",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "msg $name I wish to tp to you. Run /trigger tpaaccept to accept. To deny run /trigger tpadeny or wait 30 seconds.; trigger tpaaccept set 2; trigger tparequest set 1"
     }
-    {
-      "label": "Tpa accept",
-      "action": {
-        "type": "minecraft:dynamic/run_command",
-        "template": "trigger tpaaccept set 2"
-      }
+  },
+  "no": {
+    "label": "Nevermind/Exit Dialog",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "trigger tpa set 0"
     }
-  ]
+  }
 }
