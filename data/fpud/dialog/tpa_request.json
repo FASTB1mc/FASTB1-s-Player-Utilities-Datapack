@@ -11,8 +11,8 @@
   "inputs": [
     {
       "type": "minecraft:text",
-      "key": "name",
-      "label": "Name of player you wish to Teleport to"
+      "key": "id",
+      "label": "Player id(Displayed in tablist) of the player you wish to teleport to"
     }
   ],
   "can_close_with_escape": false,
@@ -21,14 +21,14 @@
     "label": "Send Request",
     "action": {
       "type": "minecraft:dynamic/run_command",
-      "template": ""
+      "template": "trigger tpamessage set $(id)"
     }
   },
   "no": {
     "label": "Nevermind/Exit Dialog",
     "action": {
       "type": "minecraft:run_command",
-      "template": "trigger tpa set 0"
+      "template": "trigger tpareset set 0"
     }
   }
 }
