@@ -1,3 +1,6 @@
+#
+scoreboard players operation #that playerid = @s playerid
+
 #Tells the player who wants to tp to them
 execute as @a[scores={tpa=1}] run msg @a[score={tpamessage=1}] I wish to tp to you. Run /trigger tpaaccept to accept. To deny run /trigger tpadeny or wait 30 seconds.
 
