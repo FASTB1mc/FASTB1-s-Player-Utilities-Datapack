@@ -4,5 +4,5 @@ execute as @a[scores={tpa=1}] run msg @a[score={tpamessage=1}] I wish to tp to y
 #Sets the score of the requester to 2 in the tpaaccept scoreboard
 execute as @a[scores={tpa=1}] run trigger tpaaccept set 2
 
-#
+#Starts the tpa timer
 trigger tparequest set 1
