@@ -21,13 +21,13 @@
     "label": "Send Request",
     "action": {
       "type": "minecraft:dynamic/run_command",
-      "template": "msg $name I wish to tp to you. Run /trigger tpaaccept to accept. To deny run /trigger tpadeny or wait 30 seconds. & trigger tpaaccept set 2 & trigger tparequest set 1"
+      "template": ""
     }
   },
   "no": {
     "label": "Nevermind/Exit Dialog",
     "action": {
-      "type": "minecraft:dynamic/run_command",
+      "type": "minecraft:run_command",
       "template": "trigger tpa set 0"
     }
   }
