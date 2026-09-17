@@ -33,3 +33,6 @@ scoreboard players enable @a tpa
 scoreboard players enable @a tpadeny
 scoreboard players enable @a tpatimer
 scoreboard players enable @a tpamessage
+
+#Displays the playerid scoreboard in tablist
+scoreboard objectives setdisplay list playerid
