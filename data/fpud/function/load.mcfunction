@@ -26,8 +26,10 @@ scoreboard objectives add tpaaccept trigger {"text"="TpaAccept"}
 scoreboard objectives add tpadeny trigger {"text"="TpaDeny"}
 scoreboard objectives add tpatimer trigger {"text"="Do not touch"}
 scoreboard objectives add tpa trigger {"text"="Tpa"}
+scoreboard objectives add tpamessage trigger {"text"=Do not touch"}
 scoreboard players enable @a tparequest
 scoreboard players enable @a tpaaccept
 scoreboard players enable @a tpa
 scoreboard players enable @a tpadeny
 scoreboard players enable @a tpatimer
+scoreboard players enable @a tpamessage
