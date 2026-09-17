@@ -1,8 +1,8 @@
 #Tells the player who wants to tp to them
-tellraw @a ["",{selector:"@a[score={tpamessage=1}]"},{text:" wishes to tp to you. Run /trigger tpaaccept to accept. To deny run /trigger tpadeny or wait 30 seconds."}]
+execute as @a[scores={tpa=1}] run msg @a[score={tpamessage=1}] I wish to tp to you. Run /trigger tpaaccept to accept. To deny run /trigger tpadeny or wait 30 seconds.
 
-#
-trigger tpaaccept set 2
+#Sets the score of the requester to 2 in the tpaaccept scoreboard
+execute as @a[scores={tpa=1}] run trigger tpaaccept set 2
 
 #
 trigger tparequest set 1
