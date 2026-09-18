@@ -5,7 +5,8 @@ execute unless score @a tpa matches 1 run return 1
 execute as @a[scores={tpa=1}] run msg @e[predicate=tpa_match_id] I wish to tp to you. Run /trigger tpaaccept to accept. To deny run /trigger tpadeny or wait 30 seconds.
 
 #Sets the score of the requester to 2 in the tpaaccept scoreboard
-execute as @a[scores={tpa=1}] run trigger tpaaccept set 2
+execute as @a[scores={tpa=1}] run scoreboard players set @s tpaaccept 2
 
 #Starts the tpa timer
 trigger tparequest set 1
+scoreboard players set @a tparequest 1
