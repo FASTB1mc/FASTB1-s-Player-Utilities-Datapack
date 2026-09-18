@@ -14,6 +14,7 @@ execute as @a[scores={tpatimer=0}] run scoreboard players set @a[scores={tpadeny
 #4
 execute as @a[scores={tpaaccept=1}] run function fpud:tpa
 execute as @a[scores={tpadeny=1}] run scoreboard players set @a[scores={tpaaccept=1..}] tpaaccept 0
+execute as @a[scores={tpadeny=1}] run scoreboard players set @a[scores={tpadeny=1..}] tpadeny 0
 execute as @a[scores={tpareset=1}] run function fpud:tpa_reset
 
 #Scoreboards for homes
