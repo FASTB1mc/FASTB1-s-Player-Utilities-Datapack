@@ -20,3 +20,11 @@ execute as @a[scores={tpareset=1}] run function fpud:tpa_reset
 #Scoreboards for homes
 execute as @a[score={homes=1..}] run scoreboard players operation #this playerid = @s playerid
 execute as @a[score={homes=1..}] run function fpud:homes
+
+#Checks Rtp scoreboard for teleport
+execute as @a[score={rtp=1..}] run scoreboard players operation #this playerid = @s playerid
+execute as @a[score={rtp=1..}] run function fpud:rtp
+
+#Checks Spawn scoreboard for teleport
+execute as @a[score={spawn=1..}] run scoreboard players operation #this playerid = @s playerid
+execute as @a[score={spawn=1..}] run function fpud:spawn
