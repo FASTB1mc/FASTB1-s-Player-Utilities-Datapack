@@ -28,7 +28,7 @@
     "label": "Nevermind/Exit Dialog",
     "action": {
       "type": "minecraft:run_command",
-      "template": "trigger tpareset set 0"
+      "template": "trigger tpareset set 1"
     }
   }
 }
