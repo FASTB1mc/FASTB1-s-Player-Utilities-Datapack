@@ -1,5 +1,5 @@
 #If tpa scoreboard matches 1 for anyone then it will allow the function to run
-execute unless score @a tpa matches 1 run return 1
+execute unless score @a tpa matches 1.. run return fail
 
 #Tells the player who wants to tp to them
 execute as @a[scores={tpa=1}] run msg @e[predicate=tpa_match_id] I wish to tp to you. Run /trigger tpaaccept to accept. To deny run /trigger tpadeny or wait 30 seconds.
