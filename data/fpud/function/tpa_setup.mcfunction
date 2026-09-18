@@ -8,5 +8,4 @@ execute as @a[scores={tpa=1}] run msg @e[predicate=tpa_match_id] I wish to tp to
 execute as @a[scores={tpa=1}] run scoreboard players set @s tpaaccept 2
 
 #Starts the tpa timer
-trigger tparequest set 1
 scoreboard players set @a tparequest 1
